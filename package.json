@@ -23,7 +23,7 @@
     "start": "npm run build && node ./build/index.js",
     "heroku-postbuild": "npm run build",
     "clean": "rm -rf build && mkdir build",
-    "build-babel": "babel-node -d ./build ./src/app.js -s",
+    "build-babel": "babel -d ./build ./src/app.js -s",
     "build": "npm run clean && npm run build-babel",
     "dev": "nodemon --exec babel-node ./src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
